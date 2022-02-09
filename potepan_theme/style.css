@@ -1,0 +1,212 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.AllView{
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-color: white;
+}
+
+
+.HeaderBox{
+  display: flex;
+  justify-content:space-between;
+  margin: 0 10px 0 10px;
+}
+
+/*左上のロゴ*/
+.HeaderLogo--pc{
+  margin: 10px 0 0 15px;
+  width:180px;
+  height: auto;
+  
+}
+
+/*左上のロゴ、レスポンシブ対応用*/
+.HeaderLogo--pfone{
+  margin: 10px 0 0 15px  
+}
+
+/*ヘッダーメニュー*/
+.HeaderMenu {
+  display: flex;
+  gap:30px;
+  list-style: none;
+  line-height: 0.7;
+  text-align: center;
+  align-items:center;
+}
+
+/*リンクの下線を削除*/
+a{
+    text-decoration:none; 
+}
+
+
+/*ヘッダーリストの英語（文字変えたほうがいい？）*/
+.HeaderMenuLink{
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+/*ヘッダーリストの日本語*/
+.HeaderMenu_japantext{
+  font-size: 7px;
+  font-weight: bold;
+}
+
+.HeaderMenuBtnText{
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  
+}
+
+.btn{
+  border-radius:10px;
+  background-color:#F79214;
+  padding: 10px;
+}
+
+.btn:hover{
+  opacity:0.5;
+}
+
+
+/*メイン*/
+
+.Main{
+   width: fit-content;
+   margin: 70px 0 20px 100px;
+}
+
+.MainText{
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.MainText1{
+  font-size: 35px;
+}
+
+.MainLogo{
+  display: flex;
+  /*justify-content:center;*/
+  gap:10px;
+  margin:10px 0 30px;
+  /*画像を中心に合わせる*/
+}
+
+.MainButton{
+  display: inline-block;
+}
+
+.MainButton1{
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  border-radius:30px;
+  background-color:#F79214;
+  padding: 20px;
+  margin-right:10px;
+}
+
+.MainButton1:hover{
+  opacity: 0.5;
+}
+
+.MainButton2{
+  /*小さくなると改行しちゃう！*/
+  font-size: 15px;
+  font-weight: bold;
+  border:solid 0.5px;
+  color: black;
+  border-radius:30px;
+  background-color:white;
+  padding: 20px;
+}
+.MainButton2:hover{
+  opacity: 0.5;
+}
+
+.Remarks{
+  font-size: 10px;
+  color: gray;
+  margin: 100px 0 30px 100px;
+  line-height: 1px;
+}
+
+/*フッター*/
+.Foorter{
+  background-color: #F79214;
+  color: white;
+  position: absolute;
+  width: 100%;
+  /*display: inline-block;*/
+  display: flex;
+  gap:20%;
+  /*justify-content:space-between;*/
+  align-items:center;
+}
+
+.FooterText{
+  width: fit-content;
+  margin: 45px 0px 45px 100px;
+  /*文字を白くする*/
+}
+
+
+.FooterTextTitleMain{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.FooterTextTitle{
+  font-weight:bold;
+  font-size: 30px;
+}
+
+.FooterTextEssay{
+  overflow-wrap: break-word;
+  /*サイズが変更すると同時にサイズも調整*/
+}
+
+.FoorterContent{
+  float: right;
+  margin-right: 100px;
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius:60px;
+  background-color:white;
+  padding: 15px 40px 15px; 
+  line-height:1;
+}
+
+
+.FoorterContentText{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 0.5px;
+  color:#F79214;
+  
+}
+
+.FoorterContentTextJa{
+  font-size: 10px;
+}
+
+.FoorterContentBtn:hover{
+  opacity: 0.5;
+}
+
+/*疑問点*/
+/*absoluteってなんやねん*/
