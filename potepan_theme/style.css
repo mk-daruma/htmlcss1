@@ -249,6 +249,19 @@ a{
   margin:10vw 0 30vw;
 }
 
+.MainLogo-left{
+  width:20%;
+}
+
+.MainLogo-rihgt{
+  width:20%;
+}
+
+.MainLogo_center{
+  width:20%;
+}
+
+
 .MainButton{
   display: inline-block;
 }
