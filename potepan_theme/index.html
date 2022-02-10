@@ -2,17 +2,25 @@
     <html lang="ja">
       <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>サイト模写</title>
         <link rel="stylesheet" href="style.css">
       </head>
- 
       <body>
-       <section class="AllView">
+       <div class="AllView">
          <!--ヘッダー-->
         <header class="Header">
           <div class="HeaderBox">
+            <!--レスポンシブ対応用-->
+            <!--<div class="HeaderHumbergerMenu">-->
+            <!--  <span class="HeaderHumbergerMenu-line"></span>-->
+            <!--  <span class="HeaderHumbergerMenu-line"></span>-->
+            <!--  <span class="HeaderHumbergerMenu-line"></span>-->
+            <!--</div>-->
+            <!--レスポンシブ対応用-->
             <a class="HeaderLogo" href="/" alt="POTEPAN CAMP">
-              <img class="HeaderLogo--pc" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png" alt="POTEPAN CAMP"></img><!--<img class="HeaderLogo--pfone" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo-sp.png"></img>-->
+              <img class="HeaderLogo--pc" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png" alt="POTEPAN CAMP"></img>
+              <img class="HeaderLogo--pfone" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo-sp.png"></img>
             </a>
             <ul class="HeaderMenu">
               <li class="HeaderMenu1">
@@ -46,7 +54,7 @@
               </li>
               
               <li class="HeaderMenu6">
-                <a class="btn HeaderMenuBtnText"  href="https://camp.potepan.com/contact">
+                <a class="btn HeaderMenuBtnText AllBtn"  href="https://camp.potepan.com/contact">
                   無料カウンセリング
                 </a>
               </li>
@@ -54,7 +62,7 @@
           </div>
         </header>
         <!--メイン-->
-        <main class="Main">
+        <main class="Main MainView">
           <div class="MainText">
             <span class=MainText1>
             最短５ヶ月間で<br>未経験からWebエンジニアへ
@@ -68,10 +76,10 @@
           </div>
           
           <div class="MainButton">
-            <a class="MainButton1" href="https://camp.potepan.com/contact">
+            <a class="MainButton1 AllBtn" href="https://camp.potepan.com/contact">
               無料カウンセリングはこちら
             </a>
-            <a class="MainButton2" href="https://camp.potepan.com/download">
+            <a class="MainButton2 AllBtn" href="https://camp.potepan.com/download">
               資料請求はこちら
             </a>
           </div>
@@ -87,8 +95,7 @@
               ※3: 返金の条件については利用規約をご参照ください
             </p>
           </div>
-      </section>  
-        <!--フッター-->
+       <!--フッター-->
         <footer class="Foorter">
           <div class="FooterText FooterBox">
             <h2 class="FooterTextTitle">
@@ -98,11 +105,12 @@
               ポテパンキャンプは、Web系開発現場で通用するスキルを身につけるための教育プログラムです。実践的でわかりやすいカリキュラムと適切な学習サポートで効率的に学習できる環境を用意しております。
             </h5>
           </div>
-          <div class="FoorterContent FoorterContentBtn">
+          <div class="FoorterContent FoorterContentBtn AllBtn">
             <a class="FoorterContentText" href="https://camp.potepan.com/content">
               CONTENT<br><span class="FoorterContentTextJa">学習内容</span>
             </a>
           </div>
         </footer>
+       </div>
       </body>
     </html>

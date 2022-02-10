@@ -6,28 +6,59 @@ body{
 .AllView{
   background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
   background-size: cover;
-  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+
+/*body{*/
+/*  display: none;*/
+/*  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg);*/
+/*  background-size: cover;*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
+/*}*/
+
+
+
+/*body　スマホサイズ画像*/
+/*body{*/
+/*}*/
 
 .HeaderBox{
   display: flex;
   justify-content:space-between;
-  margin: 0 10px 0 10px;
+  padding: 20px 10px 0 10px;
 }
 
-/*左上のロゴ*/
+/*左上のロゴレスポンシブ対応したらいらなくなった（念の為残しておく*/
+/*.HeaderLogo--pc{*/
+/*  margin: 10px 0 0 15px;*/
+/*  width:180px;*/
+/*  height: auto;*/
+/*}*/
+
 .HeaderLogo--pc{
   margin: 10px 0 0 15px;
-  width:180px;
+  width:200px;
   height: auto;
-  
 }
 
-/*左上のロゴ、レスポンシブ対応用*/
 .HeaderLogo--pfone{
-  margin: 10px 0 0 15px  
+  display: none;
+   width: 120px;
+  height: auto;
+  margin: 10px;
 }
+
+@media screen and (max-width:767px){
+.HeaderLogo--pc{
+  display: none;
+}
+.HeaderLogo--pfone{
+ display: block;
+ /*noneを打ち消したいだけ？質問しよう。*/
+}}
 
 /*ヘッダーメニュー*/
 .HeaderMenu {
@@ -39,7 +70,19 @@ body{
   align-items:center;
 }
 
-/*リンクの下線を削除*/
+@media screen and (max-width:1080px){
+.Header{
+  background-color: white;
+}
+.HeaderMenu{
+  display: none;
+}
+/*ここにハンバーガーメニューも入れる  */
+/*Humberger＿Line{*/
+/*画面小さくする必要はあるだろうか？*/
+/*}*/
+}
+
 a{
     text-decoration:none; 
 }
@@ -47,14 +90,13 @@ a{
 
 /*ヘッダーリストの英語（文字変えたほうがいい？）*/
 .HeaderMenuLink{
-  font-size: 15px;
+  font-size: 10px;
   color: black;
   font-weight: bold;
 }
 
-/*ヘッダーリストの日本語*/
 .HeaderMenu_japantext{
-  font-size: 7px;
+  font-size: 5px;
   font-weight: bold;
 }
 
@@ -73,7 +115,7 @@ a{
   padding: 10px;
 }
 
-.btn:hover{
+.AllBtn:hover{
   opacity:0.5;
 }
 
@@ -84,6 +126,7 @@ a{
    width: fit-content;
    margin: 70px 0 20px 100px;
 }
+/*ここにレスポンシブ対応用の画像を入れてみよう。*/
 
 .MainText{
   text-align: center;
@@ -97,10 +140,8 @@ a{
 
 .MainLogo{
   display: flex;
-  /*justify-content:center;*/
   gap:10px;
   margin:10px 0 30px;
-  /*画像を中心に合わせる*/
 }
 
 .MainButton{
@@ -119,12 +160,7 @@ a{
   margin-right:10px;
 }
 
-.MainButton1:hover{
-  opacity: 0.5;
-}
-
 .MainButton2{
-  /*小さくなると改行しちゃう！*/
   font-size: 15px;
   font-weight: bold;
   border:solid 0.5px;
@@ -132,9 +168,6 @@ a{
   border-radius:30px;
   background-color:white;
   padding: 20px;
-}
-.MainButton2:hover{
-  opacity: 0.5;
 }
 
 .Remarks{
@@ -150,10 +183,8 @@ a{
   color: white;
   position: absolute;
   width: 100%;
-  /*display: inline-block;*/
   display: flex;
   gap:20%;
-  /*justify-content:space-between;*/
   align-items:center;
 }
 
@@ -203,10 +234,3 @@ a{
 .FoorterContentTextJa{
   font-size: 10px;
 }
-
-.FoorterContentBtn:hover{
-  opacity: 0.5;
-}
-
-/*疑問点*/
-/*absoluteってなんやねん*/
