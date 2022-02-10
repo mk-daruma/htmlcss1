@@ -12,8 +12,7 @@ body{
 
 
 /*body{*/
-/*  display: none;*/
-/*  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg);*/
+/*  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);*/
 /*  background-size: cover;*/
 /*  background-position: center;*/
 /*  background-repeat: no-repeat;*/
@@ -57,7 +56,7 @@ body{
 }
 .HeaderLogo--pfone{
  display: block;
- /*noneを打ち消したいだけ？質問しよう。*/
+ /*noneを打ち消したいだけ？*/
 }}
 
 /*ヘッダーメニュー*/
