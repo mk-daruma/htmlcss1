@@ -16,8 +16,9 @@ body{
 .AllImg{
   background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg);
   background-size: contain;
-  background-position: center;
+  /*background-position: center;*/
   background-repeat: no-repeat;
+  background-position: 0% 0%;
 }}
 /*.AllImg-sp{*/
 /*  display:none;*/
@@ -86,7 +87,7 @@ body{
 .HeaderMenu{
   display: none;
 }
-/*ここにハンバーガーメニューも入れる  */
+
 .HeaderHumbergerMenu{
   display:block;
   text-align:right;
@@ -235,35 +236,38 @@ a{
 .MainText{
   text-align: center;
   font-weight: bold;
-  margin: 0 0 10px 0;
+  margin: 200px 0 10px 0;
 }
 
 .MainText1{
   font-size: 5vw;
 }
 
+.MainLogo_rihgt{
+  width:25%;
+}
+
+.MainLogo_center{
+  width:40%;
+}
+
+.MainLogo_left{
+  width:25%;
+}
+
+
 .MainLogo{
   display: flex;
   gap:10px;
   width:100%;
-  margin:10vw 0 30vw;
-}
-
-.MainLogo-left{
-  width:20%;
-}
-
-.MainLogo-rihgt{
-  width:20%;
-}
-
-.MainLogo_center{
-  width:20%;
+  margin:10px 10px 30px;
 }
 
 
 .MainButton{
-  display: inline-block;
+  display: flex;
+  flex-direction:column;
+  gap:5px;
 }
 
 .MainButton1{
@@ -275,10 +279,12 @@ a{
   border-radius:30px;
   background-color:#F79214;
   padding: 20px;
-  margin-right:10px;
+  margin:0px 10px 0px;
+  
 }
 
 .MainButton2{
+  text-align: center;
   font-size: 15px;
   font-weight: bold;
   border:solid 0.5px;
@@ -286,6 +292,7 @@ a{
   border-radius:30px;
   background-color:white;
   padding: 20px;
+  margin:0px 10px 0px;
 }
 
 .Remarks{
@@ -293,6 +300,7 @@ a{
   color: gray;
   width: 100%;
   display:inline-block;
+  margin:0px 20px 0px;
 }}
 
 
@@ -328,7 +336,6 @@ a{
 
 .FooterTextEssay{
   overflow-wrap: break-word;
-  /*サイズが変更すると同時にサイズも調整*/
 }
 
 .FoorterContent{
@@ -365,12 +372,15 @@ a{
   width: 100%;
   gap:20%;
   align-items:center;
+  display: flex;
+  flex-direction:column;
 }
 
 
 .FooterText{
   width: fit-content;
-  margin: 45px 0px 45px 100px;
+  margin: 45px;
+  align-items:center;
   /*文字を白くする*/
 }
 
@@ -383,6 +393,7 @@ a{
 .FooterTextTitle{
   font-weight:bold;
   font-size: 30px;
+  text-align: center;
 }
 
 .FooterTextEssay{
@@ -392,7 +403,6 @@ a{
 
 .FoorterContent{
   float: right;
-  margin-right: 100px;
   text-align: center;
   font-weight: bold;
   white-space: nowrap;
